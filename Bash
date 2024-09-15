@@ -12,7 +12,6 @@ rm archivo.txt = remove
 rmdir = remove directory
 cp = copy
 mv = move
-echo = es como print
 
 2. Permisos en linux
 ls -l = ver permisos
@@ -167,6 +166,9 @@ script
 
 set -e ## Detener la ejecución ante errores: Puedes hacer que un script se detenga si un comando falla usando set -e al principio del script
 
-------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
 
-Como ejercicio final y muy fácil, os quiero poner que se descarguen este archivo y filtren por el ejercicio 5. Es muy sencillito, suerte.
+
+Como ejercicio final y muy fácil, os quiero poner que se descarguen este archivo y filtren por la palabra "Créditos". Es muy sencillito, suerte.
