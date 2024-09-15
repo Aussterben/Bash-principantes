@@ -149,6 +149,7 @@ ssh -R 8080:localhost:80 usuario@servidor ## Reenviar un puerto remoto a uno loc
 ssh usuario@servidor 'comando_a_ejecutar' ## Ejecutar comandos remotos: Puedes ejecutar comandos en un servidor remoto sin iniciar sesión interactiva:
 scp archivo.txt usuario@servidor:/ruta/destino/ ## Copia remota de archivos: Con scp (secure copy) puedes copiar archivos entre servidores de manera segura:
 
+
 17. Find avanzado
 # Find = encontrar
 
@@ -165,3 +166,7 @@ echo "El valor de la variable es: $mi_variable" ## Añadir mensajes de depuraci�
 script
 
 set -e ## Detener la ejecución ante errores: Puedes hacer que un script se detenga si un comando falla usando set -e al principio del script
+
+------------------------------------
+
+Como ejercicio final y muy fácil, os quiero poner que se descarguen este archivo y filtren por el ejercicio 5. Es muy sencillito, suerte.
