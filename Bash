@@ -21,6 +21,8 @@ chgrp = cambiar grupo
 lsattr = ver permisos especiales
 chattr = añadir permisos especiales
 
+Vídeo explicando: https://www.youtube.com/watch?v=ydflwXSAxLI&ab_channel=aussterben
+
 3. Redirecciones avanzadas
 {comando} > /dev/null
 
