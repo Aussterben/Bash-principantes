@@ -1,0 +1,71 @@
+----------------------------------------------------------------------------------------------------------
+
+Bienvenidos a todos a un cursillo rápido de Atajos en linux
+Vamos a tocar un poquito de BSPWM, tmux entre otros.
+Vamos a darle.
+
+Creado por: Aussterben
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+# General
+Win + Enter -> Abrir terminal
+Win + Q -> Cerrar terminal
+Win + D -> Abrir Rofi
+Win + Esc -> Aplicar la configuración
+Win + Shift + R -> Recargar Entorno
+Win + Shift + Q -> Volver a la pantalla de bloqueo
+Esc + Esc -> Sudo
+Ctrl + Alt + Mouse -> Seleccionar copiar/pegar en modo columna
+
+# Polybar
+Win + 1-0 -> Desplazamiento por ventanas de trabajo
+Win + Shift 1-0 -> Enviar el proceso actual a otra ventana de trabajo
+
+# Preselectores
+Win + Ctrl + Alt + Flechas -> Abrir Preselector
+Win + Ctrl + Alt + Espacio -> Cerrar Preselector
+Win + Ctrl + 1-0 -> Cambiar tamaño del Preselector
+Win + Ctrl + M -> Seleccionar proceso y enviarlo a un Preselector nuevo
+Win + Y -> Aplicar proceso previamente seleccionado
+
+# Terminal
+Win + S -> Ejecutar Terminal de forma Flotante
+Win + F -> Ejecutar Terminal de forma Pantalla completa
+Win + T -> Ejecutar Terminal de forma Encajada
+Win + Click Izquierdo -> Mover la ventana Flotante (Mouse)
+Win + Click Derecho -> Ampliar o reducir el tamaño de la ventana (Mouse)
+Win + Ctrl -> Mover ventana Flotante (Atajo)
+Win + Alt -> Ampliar o reducir el tamaño de la ventana (Atajo)
+Win + Shift + Flechas -> Intercambiar terminal de izquierda/derecha/arriba/abajo
+
+# Kitty
+Ctrl + Shift + Enter -> Abrir terminal o múltiples
+Ctrl + Shift + W -> Cerrar Terminal
+Ctrl + Shift + R -> Ampliar o reducir tamaño de la terminal (T=Arriba S=Abajo) Más 3 terminales (W=Izquierda N=Derecha)
+Ctrl + Shift + Alt + T -> Renombrar
+Ctrl + Shift + Alt + ,/. -> Desplazamiento por pestañas (Signo coma o punto)
+
+# OhMyTmux
+Ctrl + B + W -> Ver todas las sesiones creadas
+Ctrl + B + F5 -> Crear terminales en Vertical
+Ctrl + B + " -> Crear terminales en Horizontal
+Ctrl + B + D -> Salir de la sesión actual
+Ctrl + B + % -> Dividir una ventana en paneles superior e inferior
+Ctrl + B + flecha -> Mover a un panel diferente en una dirección
+Ctrl + B + X -> Cerrar el panel actual
+Ctrl + B + C -> Crear una nueva ventana
+Ctrl + B + N -> Pasar a la siguiente ventana según el número
+Ctrl + B + P -> Volver a la ventana anterior
+Ctrl + B + número ID -> Saltar a una ventana concreta utilizando el número ID
+Ctrl + B + Shift + ? -> Mostrar todos los atajos
+Ctrl + B + , -> Cambia en nombre de la ventana
+Ctrl + B + F4 -> Cambia el nombre de la sesión
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+En caso de usar, den créditos al creador: Aussterben
+
+----------------------------------------------------------------------------------------------------------
