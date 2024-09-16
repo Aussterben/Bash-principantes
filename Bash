@@ -17,6 +17,7 @@ mv = move
 ls -l = ver permisos
 chmod = cambiar permisos
 chown = cambiar propiedad
+chgrp = cambiar grupo
 
 3. Redirecciones avanzadas
 {comando} > /dev/null
