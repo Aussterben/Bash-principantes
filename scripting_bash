@@ -1,0 +1,279 @@
+Bienvenidos a todos a un cursillo rápido de scripting en Bash.
+
+Creado por: Aussterben, ChatGPT
+
+¿Para qué nos va a servir el scripting en bash?
+El scripting en bash nos va a servir para a la hora de hacer pentesting, poder automatizar procesos. O simplemente para hacer programas, eso ya lo utilizas para lo que tú quieras.
+Voy a tratar de profundizar lo máximo posible en cada cosa para que no queden dudas y lo pueda entender hasta mi primillo chico.
+
+¿Tengo que tener un cierto nivel de bash?
+Sí, es importante saber manejarte por linux, ya que vamos a usar muchos comandos que si no sabes, no sé que haces.
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+1. Creamos nuestro primer script.
+
+Para hacer nuestro primer script en bash tenemos que hacer un "touch nombre.sh"
+luego le daremos permisos de ejecución con "chmod +x nombre.sh"
+por último, entramos al script con "nano nombre.sh" o el editor de texto que uses.
+
+2. Estructura básica de un script en bash.
+
+Un script de bash empieza SIEMPRE por un #!/bin/bash
+Eso lo que hace es básicamente indicar al OS que el archivo debe ejecutarse usando bash.
+Como he dicho anteriormente, si no sabes bash, vas mal. Así que aprende bash primero y luego vienes, ya que todos los comandos que se pueden usar en terminal, pueden ser usados en
+scripting.
+
+Ejemplo:
+| | |
+v v v
+echo "¡Hola, mundo!"
+
+3. Ejecutar el script
+
+Una vez que le añadamos permisos al script, tenemos que ejecutarlo. ¿Cómo lo ejecutamos? Bueno, es realmente sencillo. Sí o sí tenemos que haber puesto el chmod +x para poder ejecutar.
+ahora usaremos ./nombre.sh para ejecutarlo. Si lo hemos hecho todo bien, nos pondrá "¡Hola mundo!"
+
+4. Comentarios en Bash
+
+# Esto es un comentario en bash. Esto es algo que no se ve a la hora de ejecutar el script. Pero que nos ayudará a la hora de hacer scripting.
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Variables en Bash:
+
+Las variables en Bash son muy simples. Se pueden declarar y utilizar para almacenar datos como números, cadenas o resultados de comandos
+
+1. Declaración de Variables
+En bash no usamos "=" para comparar, sino para asignar valores a variables, sin espacios alrededor del signo "="
+Os dejo aquí un pequeño script para que vayáis entendiendo
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+# Declaración de variables
+mi_variable="Hola"
+numero=42
+
+# Uso de variables
+echo $mi_variable   # Imprime "Hola"
+echo $numero        # Imprime "42"
+
+------------------------------------------------------------------
+
+Mi_variable="Hola": Asigna la cadena "Hola" a la variable "mi_variable"
+$mi_variable: El signo "$" es usado para acceder al valor de la variable
+
+2. Variables especiales
+Bash tiene algunas variables especiales como:
+$0: El nombre del script
+$1, $2: etc.: Los argumentos que se le pasan al script desde la línea de comandos
+$#: El número de argumentos pasados.
+$@: Todos los argumentos pasados al script.
+
+Ejemplo de uso de variables especiales:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+echo "El nombre del script es: $0"
+echo "El primer argumento es: $1"
+
+Si estás haciendo un script mientras lees esto y has copiado la línea, prueba el script.
+Lo que te va a salir es básicamente esto:
+
+El nombre del script es: ./nombre.sh
+El primer argumento es: argumento1
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+1. Condicionales (if, else)
+La estructura de control "if" en Bash sigue la siguiente sintaxis
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+# Un condicional básico
+if [ condición ]; then
+    # Si la condición es verdadera
+    echo "Condición verdadera"
+else
+    # Si la condición es falsa
+    echo "Condición falsa"
+fi
+
+------------------------------------------------------------------
+
+Siempre vamos a acabar con la palabra al revés con la que hayamos comenzado. O sea, que si tengo "if" voy a acabar con "fi".
+Nota importante: El espacio entre los corchetes "[]" y la condición es obligatorio.
+
+Ejemplo con comparación:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+numero=10
+
+if [ $numero -gt 5 ]; then
+    echo "El número es mayor que 5"
+else
+    echo "El número no es mayor que 5"
+fi
+
+------------------------------------------------------------------
+-gt: es un operador de comparación que significa "greater than" (mayor que). Otros operadores comunes incluyen:
+-lt: Menor que
+-eq: Igual a
+-ne: No igual a
+-ge: Mayor o igual
+-le: Menor o igual
+
+2. Bucles (for, while)
+Los bucles son utilizados para ejecutar un bloque de código varias veces.
+
+Bucle for:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+for i in 1 2 3 4 5; do
+    echo "Iteración número $i"
+done
+
+------------------------------------------------------------------
+
+Esto imprimirá:
+
+Iteración número 1
+Iteración número 2
+Iteración número 3
+Iteración número 4
+Iteración número 5
+
+También puedes iterar sobre los resultados de un comando:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+for archivo in $(ls); do
+    echo "Archivo encontrado: $archivo"
+done
+
+------------------------------------------------------------------
+
+Bucle While:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+contador=1
+
+while [ $contador -le 5 ]; do
+    echo "Contador: $contador"
+    contador=$((contador + 1))   # Incrementa el contador
+done
+
+------------------------------------------------------------------
+
+Esto imprime:
+
+Contador: 1
+Contador: 2
+Contador: 3
+Contador: 4
+Contador: 5
+
+Manejo de funciones en Bash
+Las funciones son bloques reutilizables de código que pueden ser llamados desde cualquier parte del script.
+
+Declaración de una función:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+# Definir una función
+mi_funcion() {
+    echo "Esto es una función"
+}
+
+# Llamar a la función
+mi_funcion
+
+------------------------------------------------------------------
+
+Las funciones también pueden recibir parámetros:
+
+------------------------------------------------------------------
+
+#!/bin/bash
+
+# Definir una función con parámetros
+saludar() {
+    echo "Hola, $1!"
+}
+
+# Llamar a la función con un argumento
+saludar "Carlos"
+
+------------------------------------------------------------------
+
+Aquí "$1" es el primer argumento pasado a la función
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Redirección y tuberías
+
+1. Redirección
+La redirección te permite enviar la salida de un comando a un archivo o capturar la entrada desde un archivo.
+
+>: Redirige la salida a un archivo (Sobreescribe el archivo).
+>>: Redirige la salida a un archivo (Añade al archivo).
+<: Redirige la entrada desde un archivo.
+
+Ejemplo:
+| | |
+v v v
+
+
+------------------------------------------------------------------
+
+echo "Esto se guarda en un archivo" > archivo.txt
+
+------------------------------------------------------------------
+Esto guardará el texto "Esto se guarda en un archivo" en el archivo "archivo.txt"
+
+2. Tuberías ( | )
+Las tuberías permiten encadenar comandos, usando la salida de un comando como entrada de otro.
+
+Ejemplo
+| | |
+v v v
+
+
+------------------------------------------------------------------
+
+ls -l | grep ".txt"
+
+------------------------------------------------------------------
+Esto lista todos los archivos en el directorio actual y luego filtra aquellos que contienen ".txt"
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+Como conclusión final solamente tengo que decir que le metáis muchas horas a esto si os gusta. Esta vez no hay ejercicio final, buenas tardes.
+Cualquier duda podéis preguntármela por mi discord "aussterben.l"
+
+Iré actualizando.
