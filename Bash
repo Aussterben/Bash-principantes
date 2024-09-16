@@ -18,6 +18,8 @@ ls -l = ver permisos
 chmod = cambiar permisos
 chown = cambiar propiedad
 chgrp = cambiar grupo
+lsattr = ver permisos especiales
+chattr = añadir permisos especiales
 
 3. Redirecciones avanzadas
 {comando} > /dev/null
