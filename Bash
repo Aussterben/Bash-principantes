@@ -16,6 +16,8 @@ rmdir = remove directory
 mkdir = make directory
 touch = crear archivos
 
+Vídeo explicándolo: https://www.youtube.com/watch?v=FAbETn--_0U
+
 2. Permisos en linux
 ls -l = ver permisos
 chmod = cambiar permisos
