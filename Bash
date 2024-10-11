@@ -4,14 +4,17 @@ Créditos: Chatgpt, Aussterben
 
 1. Comandos básicos de Bash
 
-ls = list
 cd = change directory
+ls = list
 pwd = print working directory
-mkdir = make directory
-rm archivo.txt = remove
-rmdir = remove directory
+whoami = quien soy
+cat = leer archivos
 cp = copy
 mv = move
+rm = remove
+rmdir = remove directory
+mkdir = make directory
+touch = crear archivos
 
 2. Permisos en linux
 ls -l = ver permisos
