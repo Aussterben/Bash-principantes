@@ -1,3 +1,5 @@
+____________________________________
+
 Creado por: Aussterben
 Canal de Youtube: https://www.youtube.com/@aussterben.l
 Créditos: Chatgpt, Aussterben
@@ -11,10 +13,11 @@ ADVERTENCIA: Quien quiera subir este repositorio, que por favor ponga los crédi
 
 Dudas: 
 ¿Esto está siendo actualizado?
-Sí, quiero meter más cosas a este Bash-Principiantes
-¿Habrán más "cursos"?
-Es muy posible que sí, tengo en mente uno de personalización de Kali y Arch automatizados.
+No, debido a que en mi canal ya hay un vídeo explicando linux desde 0
+
+https://www.youtube.com/watch?v=JAxnFFYScq4
+
 ¿Tienes alguna red social por la que te pueda contactar para que me resuelvas dudas?
 ¡Claro! Tengo mi discord público aquí: aussterben.l
 
-Próximos cursos: Personalización De Linux Automatizada
+____________________________________
