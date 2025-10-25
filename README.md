@@ -12,12 +12,15 @@ Todos los créditos para Chatgpt, el cual me ha recordado la mayoría de comando
 ADVERTENCIA: Quien quiera subir este repositorio, que por favor ponga los créditos en la descripción.
 
 Dudas: 
+
 ¿Esto está siendo actualizado?
+
 No, debido a que en mi canal ya hay un vídeo explicando linux desde 0
 
 https://www.youtube.com/watch?v=JAxnFFYScq4
 
 ¿Tienes alguna red social por la que te pueda contactar para que me resuelvas dudas?
-¡Claro! Tengo mi discord público aquí: aussterben.l
+
+¡Claro! Tengo mi discord público aquí: aussterben_l
 
 ____________________________________
